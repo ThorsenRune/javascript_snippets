@@ -23,6 +23,7 @@ thanks to:https://gist.github.com/eriwen/1211656 for inspiration
 	while (targetArr[0]==sourceArr[0]) {//Strip common root
 		if (sourceArr.length<=1) break;	//if same file
 		targetArr.shift();			//Remove first entry (targetArr[0])
+		sourceArr.shift();
 	}	
 	relativePath = "";						// Make step up string from source pos to common root
 	for (var i=0;i<sourceArr.length-1;i++)
